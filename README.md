@@ -7,9 +7,7 @@
   <a href="#books-resources">Resources</a>
 </p>
 
-> In this workshop, participants learn how to secure Git commits using the new OpenSSH feature.
->
-> This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
+> In this workshop, participants learn how to secure Git commits using the new OpenSSH feature.  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
 
 ## :mega: Prerequisites
 - Git 2.34 or newer
