@@ -2,5 +2,6 @@
 
 <p align="center">
   <a href="would-you-accept-pr.md">"Would you accept this pull request?"</a> •  
+  Setup workstation •  
   <a href="sign-verify-commits.md">Signing and verifying commits</a>
 </p>
