@@ -24,7 +24,7 @@
 1. [Setup workstation](exercises/setup-workstation.md)
 1. [Signing and verifying commits](exercises/sign-verify-commits.md)
 1. [Signing and verifying tags](exercises/sign-verify-tags.md)
-1. [Verifying commits as part of CI](exercises/verify-ci.md)
+1. [Verifying as part of CI](exercises/verify-ci.md)
 1. [Adoption challenges](exercises/adoption-challenges.md)
 
 ## :books: Resources
