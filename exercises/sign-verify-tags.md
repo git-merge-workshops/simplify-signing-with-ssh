@@ -1,4 +1,4 @@
-<h1 align="center">Exercise: Signing and verifying tags</h1>
+<h1 align="center">&#127890; Exercise: Signing and verifying tags</h1>
 
 <p align="center">
   <a href="sign-verify-commits.md">Signing and verifying commits</a> •  

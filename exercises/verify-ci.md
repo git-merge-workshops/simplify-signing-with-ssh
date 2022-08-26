@@ -1,4 +1,4 @@
-<h1 align="center">Exercise: Verifying as part of CI</h1>
+<h1 align="center">&#127890; Exercise: Verifying as part of CI</h1>
 
 <p align="center">
   <a href="sign-verify-tags.md">Signing and verifying tags</a> •  
