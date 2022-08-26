@@ -5,3 +5,11 @@
   Signing and verifying tags •  
   <a href="verify-ci.md">Verifying as part of CI</a>
 </p>
+
+## Steps
+
+1.
+
+Next: <a href="verify-ci.md">Verifying as part of CI</a>
+
+[man-git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign

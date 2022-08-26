@@ -58,12 +58,10 @@
    >
    > <img width="920" alt="Screen Shot 2022-08-24 at 4 09 56 PM" src="https://user-images.githubusercontent.com/2089743/186513817-73b33136-0672-4a88-9c93-172404c2490f.png">
 
-1. **Config SSH signing and verifying for workshop repository specifically:**
+1. **Configure SSH signing and verifying for workshop repository specifically:**
 
    ```shell
    git config gpg.format ssh
-   git config commit.gpgsign true
-   git config tag.gpgsign true
    git config user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
    git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
    ```
@@ -73,73 +71,15 @@
    >
    > ```shell
    > git config --global gpg.format ssh
-   > git config --global commit.gpgsign true
-   > git config --global tag.gpgsign true
    > git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
    > git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
    > ```
 
-   For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`tag.gpgSign`][man-git-config-taggpgsign], [`commit.gpgSign`][man-git-config-commitgpgsign], [`gpg.format`][man-git-config-gpgformat].
-
-1. **Confirm SSH signing is setup correctly**
-
-   ```shell
-   git commit --allow-empty --message="Confirm SSH signing setup"
-   ```
-
-   Possible responses:
-
-   - ```
-     [main f425cff] Confirm SSH signing setup
-     ```
-
-     :partying_face: Congratulations!  SSH signing setup including SSH agent is good.
-
-   - ```
-     error: Load key "/var/folders/xb/svzskj1x77x3qsmwx1d84nqc0000gn/T//.git_signing_key_tmpW0EAyi": invalid format?
-     ```
-
-     :disappointed_relieved: Do not to worry!  This is error is likely due to:
-
-     1. SSH agent being stopped
-     1. SSH private key not being added
-     1. mismatch between SSH private and public keys
-
-1. **Confirm SSH verifying is setup correctly**
-
-   ```shell
-   git log --show-signature
-   ```
-
-   Possible responses:
-
-   - ```
-     Good "git" signature for your_email@example.com with ED25519 key SHA256:...
-     ```
-
-     :partying_face: Congratulations!  SSH verifying setup including SSH agent is good.
-
-   - ```
-     error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification
-     ```
-
-     :disappointed_relieved: Do not to worry!  This is error is likely due to missing `gpg.ssh.allowedSignersFile` configuration above.
-
-   - ```
-     Good "git" signature with ED25519 key SHA256:...
-     /path/to/.ssh/allowed_signers:1: invalid key^M
-     sig_find_principals: sshsig_get_principal: key not found^M
-     No principal matched.
-     ```
-
-     :disappointed_relieved: Do not to worry!  This is error is likely due to format of `gpg.ssh.allowedSignersFile` file as SSH public keys cannot be copied as-is into the file.
+   For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`gpg.format`][man-git-config-gpgformat].
   
 Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
 
 [man-git-config-gpgsshallowedsignersfile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile
 [man-git-config-usersigningkey]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey
-[man-git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign
-[man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
 [man-git-config-gpgformat]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgformat
 [man-ssh-keygen-allowedsigners]: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html#ALLOWED_SIGNERS
-[man-ssh-keygen-files]: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html#FILES
