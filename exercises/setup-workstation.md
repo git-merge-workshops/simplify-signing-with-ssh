@@ -79,6 +79,8 @@
    > git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
    > ```
 
+   For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`tag.gpgSign`][man-git-config-taggpgsign], [`commit.gpgSign`][man-git-config-commitgpgsign], [`gpg.format`][man-git-config-gpgformat].
+
 1. **Confirm SSH signing is setup correctly**
 
    ```shell
@@ -100,7 +102,7 @@
      :disappointed_relieved: Do not to worry!  This is error is likely due to:
 
      1. SSH agent being stopped
-     1. SSH private key not being loaded
+     1. SSH private key not being added
      1. mismatch between SSH private and public keys
 
 1. **Confirm SSH verifying is setup correctly**
@@ -115,9 +117,13 @@
      Good "git" signature for your_email@example.com with ED25519 key SHA256:...
      ```
 
+     :partying_face: Congratulations!  SSH verifying setup including SSH agent is good.
+
    - ```
      error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification
      ```
+
+     :disappointed_relieved: Do not to worry!  This is error is likely due to missing `gpg.ssh.allowedSignersFile` configuration above.
 
    - ```
      Good "git" signature with ED25519 key SHA256:...
@@ -126,5 +132,14 @@
      No principal matched.
      ```
 
+     :disappointed_relieved: Do not to worry!  This is error is likely due to format of `gpg.ssh.allowedSignersFile` file as SSH public keys cannot be copied as-is into the file.
+  
+Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
+
+[man-git-config-gpgsshallowedsignersfile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile
+[man-git-config-usersigningkey]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey
+[man-git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign
+[man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
+[man-git-config-gpgformat]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgformat
 [man-ssh-keygen-allowedsigners]: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html#ALLOWED_SIGNERS
 [man-ssh-keygen-files]: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html#FILES
