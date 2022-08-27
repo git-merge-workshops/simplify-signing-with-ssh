@@ -1,7 +1,7 @@
 <h1 align="center">&#127890; Exercise: Motivation</h1>
 
 <p align="center">
-  Motivation
+  Motivation •  
   <a href="setup-workstation.md">Setup workstation</a>
 </p>
 
