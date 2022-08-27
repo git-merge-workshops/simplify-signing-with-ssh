@@ -3,7 +3,7 @@
 <p align="center">
   <a href="sign-verify-commits.md">Signing and verifying commits</a> •  
   Signing and verifying tags •  
-  <a href="verify-ci.md">Verifying as part of CI</a>
+  <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
 ## Steps
@@ -67,7 +67,7 @@
    For more information about these Git configuration options, see [`tag.gpgSign`][man-git-config-taggpgsign].
 
 <p align="right">
-  Next: <a href="verify-ci.md">Verifying as part of CI</a>
+  Next: <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
 [man-git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign

@@ -4,6 +4,7 @@
 <p align="center">
   <a href="#mega-prerequisites">Prerequisites</a> •  
   <a href="#schoolsatchel-exercises">Exercises</a> •  
+  <a href="#rocket-beyond">Beyond</a> •  
   <a href="#books-resources">Resources</a>
 </p>
 
@@ -20,12 +21,15 @@
   - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
 ## :school_satchel: Exercises 
-1. [_"Would you accept this pull request?"_](exercises/would-you-accept-pr.md)
+1. [Motivation](exercises/motivation.md)
 1. [Setup workstation](exercises/setup-workstation.md)
 1. [Signing and verifying commits](exercises/sign-verify-commits.md)
 1. [Signing and verifying tags](exercises/sign-verify-tags.md)
-1. [Verifying as part of CI](exercises/verify-ci.md)
-1. [Adoption challenges](exercises/adoption-challenges.md)
+1. [Signing past commits and tags](exercises/sign-past-commits-tags.md)
+
+## :rocket: Beyond
+1. [Case study: `bitcoin/bitcoin`](case-study-bitcoin.md)
+1. [Adoption challenges](adoption-challenges.md)
 
 ## :books: Resources
 - Git commands used for signing and verifying
