@@ -76,8 +76,10 @@
    > ```
 
    For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`gpg.format`][man-git-config-gpgformat].
-  
-Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
+
+<p align="right">
+  Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
+</p>
 
 [man-git-config-gpgsshallowedsignersfile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile
 [man-git-config-usersigningkey]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey

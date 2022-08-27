@@ -11,13 +11,13 @@
 1. **Confirm SSH commit signing is setup correctly**
 
    ```shell
-   git commit -S --allow-empty --message="Confirm SSH signing setup"
+   git commit -S --allow-empty --message="Confirm SSH commit signing setup"
    ```
 
-   Possible responses:
+   Possible results:
 
    - ```
-     [main f425cff] Confirm SSH signing setup
+     [main f425cff] Confirm SSH commit signing setup
      ```
 
      :partying_face: Congratulations!  SSH signing setup including SSH agent is good.
@@ -38,13 +38,13 @@
    git log --show-signature
    ```
 
-   Possible responses:
+   Possible results:
 
    - ```
      Good "git" signature for your_email@example.com with ED25519 key SHA256:...
      ```
 
-     :partying_face: Congratulations!  SSH verifying setup including SSH agent is good.
+     :partying_face: Congratulations!  SSH commit verifying setup including SSH agent is good.
 
    - ```
      error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification
@@ -78,7 +78,9 @@
 
    For more information about these Git configuration options, see [`commit.gpgSign`][man-git-config-commitgpgsign], [`log.showSignature`][man-git-config-logshowsignature].
   
-Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
+<p align="right">
+  Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
+</p>
 
 [man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
 [man-git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
