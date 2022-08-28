@@ -11,7 +11,7 @@
 1. **Confirm SSH tag signing is setup correctly**
 
    ```shell
-   git tag -S --message="Confirm SSH tag signing setup" v1.0.0
+   git tag -s --message="Confirm SSH tag signing setup" v1.0.0
    ```
 
    Possible responses:
