@@ -6,6 +6,14 @@
   <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
+## Outcomes
+
+> In this exercise, the process for signing and verifying tags is covered including:
+>
+> 1. Explicitly sign and verify tags
+> 1. Troubleshooting problems
+> 1. Optional Git configurations to sign and verify all tags
+
 ## Steps
 
 1. **Confirm SSH tag signing is setup correctly**

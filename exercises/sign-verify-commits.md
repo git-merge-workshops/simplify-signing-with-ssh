@@ -6,6 +6,14 @@
   <a href="sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
+## Outcomes
+
+> In this exercise, the process for signing and verifying commits is covered including:
+>
+> 1. Explicitly sign and verify commits
+> 1. Troubleshooting problems
+> 1. Optional Git configurations to sign and verify all commits
+
 ## Steps
 
 1. **Confirm SSH commit signing is setup correctly**
