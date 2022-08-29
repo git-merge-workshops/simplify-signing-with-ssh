@@ -12,5 +12,6 @@ WIP
 </p>
 
 <p align="right">
+  <hr />
   Next: <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
 </p>

@@ -6,11 +6,35 @@
   <a href="sign-verify-commits.md">Signing and verifying commits</a>
 </p>
 
+## Outcomes
+
+> In this exercise, the minimal necessary workstation setup for using SSH code signing is covered including:
+>
+> 1. Checking and installing prerequisites
+> 1. Checking and generating sufficiently secure SSH certificates
+> 1. Minimal Git configuration for signing and verifying personal changes
+
 ## Steps
+
+1. **Confirm minimum versions of prerequisites; otherwise install accordingly**
+
+   ```shell
+   git --version
+   ssh -V
+   ```
+
+   - Git 2.34 or newer
+     - [Linux](https://git-scm.com/download/linux)
+     - [MacOS](https://git-scm.com/download/mac)
+     - [Windows](https://git-scm.com/download/win)
+   - OpenSSH 8.0 or newer
+     - [Linux](https://www.openssh.com/portable.html)
+     - [MacOS](https://formulae.brew.sh/formula/openssh)
+     - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
 1. **Generate a new SSH key if an existing key does not exist:**
 
-   > *Warning*
+   > **Warning**
    > Using a passphrase is strongly recommended to secure SSH keys.  With SSH signing requiring use of the SSH agent, the SSH agent will ask once for the passphrase, reducing the need to enter it every time while the SSH agent is running.
 
    ```shell
@@ -19,7 +43,7 @@
    chmod 644 ~/.ssh/id_ed25519.pub
    ```
 
-   > *Note*
+   > **Note**
    > If you are using a legacy system that doesn't support the Ed25519 algorithm, use 4096-bit RSA keys for workshop:
    >
    > ```shell
@@ -41,7 +65,7 @@
    awk '{ print $3 " " $1 " " $2 }' ~/.ssh/id_ed25519.pub >> ~/.ssh/allowed_signers
    ```
 
-   > *Note*
+   > **Note**
    > This is a simple variant of a `ssh-keygen` allowed signers file for the purposes of the workshop.
    >
    > For information on more advanced variants, see [`ssh-keygen` ALLOWED SIGNERS documentation][man-ssh-keygen-allowedsigners].
@@ -53,7 +77,7 @@
    cd simplify-signing-with-ssh
    ```
 
-   > *Note*
+   > **Note**
    > This workshop repository is a template, which GitHub users can use to create a copy within their own account.
    >
    > <img width="920" alt="Screen Shot 2022-08-24 at 4 09 56 PM" src="https://user-images.githubusercontent.com/2089743/186513817-73b33136-0672-4a88-9c93-172404c2490f.png">
@@ -66,7 +90,7 @@
    git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
    ```
 
-   > *Note*
+   > **Note**
    > To globally configure SSH signing and verifying, use the `--global` flag:
    >
    > ```shell
@@ -78,6 +102,7 @@
    For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`gpg.format`][man-git-config-gpgformat].
 
 <p align="right">
+  <hr />
   Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
 </p>
 

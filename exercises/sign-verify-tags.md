@@ -57,7 +57,7 @@
    git config tag.gpgsign true
    ```
 
-   > *Note*
+   > **Note**
    > To globally configure SSH signing and verifying, use the `--global` flag:
    >
    > ```shell
@@ -67,6 +67,7 @@
    For more information about these Git configuration options, see [`tag.gpgSign`][man-git-config-taggpgsign].
 
 <p align="right">
+  <hr />
   Next: <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
