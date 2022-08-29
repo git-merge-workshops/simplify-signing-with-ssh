@@ -66,8 +66,8 @@
 
    For more information about these Git configuration options, see [`tag.gpgSign`][man-git-config-taggpgsign].
 
+<hr />
 <p align="right">
-  <hr />
   Next: <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 

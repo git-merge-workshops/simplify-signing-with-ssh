@@ -101,8 +101,8 @@
 
    For more information about these Git configuration options, see [`gpg.ssh.allowedSignersFile`][man-git-config-gpgsshallowedsignersfile], [`user.signingKey`][man-git-config-usersigningkey], [`gpg.format`][man-git-config-gpgformat].
 
+<hr />
 <p align="right">
-  <hr />
   Next: <a href="sign-verify-commits.md">Signing and verifying commits</a>
 </p>
 

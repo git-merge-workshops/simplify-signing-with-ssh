@@ -69,8 +69,8 @@ In the May 2021 White House "[Executive Order on Improving the Nation’s Cybers
 
   > ensuring and attesting, to the extent practicable, to the integrity and provenance of open source software used within any portion of a product.
 
+<hr />
 <p align="right">
-  <hr />
   Next: <a href="setup-workstation.md">Setup workstation</a>
 </p>
 

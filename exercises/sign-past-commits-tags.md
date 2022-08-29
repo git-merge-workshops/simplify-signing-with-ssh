@@ -11,7 +11,7 @@ WIP
   <img alt="Congratulations, exercises complete!" src="https://octodex.github.com/images/welcometocat.png" width="400" height="400" />
 </p>
 
+<hr />
 <p align="right">
-  <hr />
   Next: <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
 </p>

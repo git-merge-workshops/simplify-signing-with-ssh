@@ -78,8 +78,8 @@
 
    For more information about these Git configuration options, see [`commit.gpgSign`][man-git-config-commitgpgsign], [`log.showSignature`][man-git-config-logshowsignature].
   
+<hr />
 <p align="right">
-  <hr />
   Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
