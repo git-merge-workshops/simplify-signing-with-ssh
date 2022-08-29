@@ -22,9 +22,10 @@ Which of these 2 pull requests would you accept?
   <img width="1792" alt="Screenshot depicting pull request with verified changes" src="https://user-images.githubusercontent.com/2089743/187014106-a5ccc564-ecc2-4f62-816d-2f6abd875143.png" />
 </p>
 
+Due to the decentralized nature of Git, authenticity can only be established by signing changes, which involves capturing the additional `gpgsig` header information with the [Git objects][git-scm-internals-storage]:
+
 ```shell
-andre@WIN-29L6KJF8DED MINGW64 ~/simplify-signing-with-ssh (main)
-$ git log
+~/simplify-signing-with-ssh (main) $ git log
 commit d7a327072ed28cb660924d903ae7c3c22f6c13d1 (HEAD -> main)
 Good "git" signature for andrew.feller@gmail.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
 Merge: 25c3e34 a512451
@@ -32,11 +33,9 @@ Author: Andrew Feller <andrew.feller@gmail.com>
 Date:   Sun Aug 28 13:25:48 2022 -0400
 
     Merge branch 'main' of github.com:git-merge-workshops/simplify-signing-with-ssh
-```
 
-```shell
-andre@WIN-29L6KJF8DED MINGW64 ~/simplify-signing-with-ssh (main)
-$ git cat-file -p d7a327072ed28cb660924d903ae7c3c22f6c13d1
+
+~/simplify-signing-with-ssh (main) $ git cat-file -p d7a327072ed28cb660924d903ae7c3c22f6c13d1
 tree 1a0ea28e98cc913b83a26347cab3e0df98a36ece
 parent 25c3e34e22861e7bef8d5f177ea8809d8f547068
 parent a5124518546d6680626d806c36085099333fac4c
@@ -54,7 +53,9 @@ Merge branch 'main' of github.com:git-merge-workshops/simplify-signing-with-ssh
 
 ## Broader security concerns
 
-It is has never been more critical to secure our supply chain as sophisticated breaches occur.  In the May 2021 White House "[Executive Order on Improving the Nation’s Cybersecurity][whitehouse-improving-nations-cybersecurity]" executive order, enhancing software supply chain had a whole section devoted to establishing trust:
+Our reliance on software and the increasingly complex ways that changes are authored have raised the need to secure our supply chains.
+
+In the May 2021 White House "[Executive Order on Improving the Nation’s Cybersecurity][whitehouse-improving-nations-cybersecurity]" executive order, enhancing software supply chain had a whole section devoted to establishing trust:
 
 - `4.e.iii`
 
@@ -72,4 +73,5 @@ It is has never been more critical to secure our supply chain as sophisticated b
   Next: <a href="setup-workstation.md">Setup workstation</a>
 </p>
 
+[git-scm-internals-storage]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_object_storage
 [whitehouse-improving-nations-cybersecurity]: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
