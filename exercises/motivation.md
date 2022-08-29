@@ -69,7 +69,7 @@ In the May 2021 White House "[Executive Order on Improving the Nation’s Cybers
 
   > ensuring and attesting, to the extent practicable, to the integrity and provenance of open source software used within any portion of a product.
 
-Historically, code signing has been accomplished through GPG or X.509 until a [July 2021 RFC proposed adding SSH support][git-ssh-signing-rfc].  With more users familiar with and utilizing SSH keys, SSH signing support has the potential of improving code signing rates.
+Historically, code signing has been accomplished through GPG or X.509 until a [July 2021 RFC proposed adding SSH support][git-ssh-signing-rfc].  With more users familiar with and utilizing SSH keys, SSH signing support has the potential of improving code signing rates.  This functionality would finally be released in [Git 2.34][git-2.34-tidbits].
 
 <hr />
 <p align="right">
