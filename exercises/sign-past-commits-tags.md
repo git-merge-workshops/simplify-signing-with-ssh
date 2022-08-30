@@ -113,14 +113,6 @@
 
 1. **Signing old commits or tags might require setting `GIT_COMMITTER_DATE` to preserve historical date**
 
-## Congratulations
-
-<p align="center">
-  <img alt="Congratulations, exercises complete!" src="https://octodex.github.com/images/welcometocat.png" width="400" height="400" />
-
-  Congratulations, exercises complete!
-</p>
-
 <hr />
 <p align="right">
   Next: <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
