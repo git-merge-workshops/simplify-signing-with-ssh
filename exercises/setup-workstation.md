@@ -32,6 +32,13 @@
      - [MacOS](https://formulae.brew.sh/formula/openssh)
      - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
+   Afterwards, configure Git with your name and email address:
+
+   ```shell
+   git config --global user.name "Your Name"
+   git config --global user.email "your_email@example.com"
+   ```
+
 1. **Generate a new SSH key if an existing key does not exist:**
 
    > **Warning**
