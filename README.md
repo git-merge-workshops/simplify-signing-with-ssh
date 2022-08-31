@@ -43,6 +43,12 @@
   - [`git verify tag`][git-verify-tag]
 - [Git 2.34.0 changelog][git-changelog-2.34.0]
 
+## :sparkles: Thanks
+
+This effort couldn't have happened without the support from many people, so thank you to the following who helped throughout the creation of this workshop:
+
+@ppremk, @leereilly, @bval, @aaronkowall, @bestra, @apdarr, @evgenyrahman
+
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/
 [git-commit-sign]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--Sltkeyidgt
