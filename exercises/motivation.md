@@ -27,9 +27,9 @@ Due to the decentralized nature of Git, authenticity can only be established by 
 ```shell
 ~/simplify-signing-with-ssh (main) $ git log
 commit d7a327072ed28cb660924d903ae7c3c22f6c13d1 (HEAD -> main)
-Good "git" signature for andrew.feller@gmail.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
+Good "git" signature for andyfeller@github.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
 Merge: 25c3e34 a512451
-Author: Andrew Feller <andrew.feller@gmail.com>
+Author: Andy Feller <andyfeller@github.com>
 Date:   Sun Aug 28 13:25:48 2022 -0400
 
     Merge branch 'main' of github.com:git-merge-workshops/simplify-signing-with-ssh
@@ -39,8 +39,8 @@ Date:   Sun Aug 28 13:25:48 2022 -0400
 tree 1a0ea28e98cc913b83a26347cab3e0df98a36ece
 parent 25c3e34e22861e7bef8d5f177ea8809d8f547068
 parent a5124518546d6680626d806c36085099333fac4c
-author Andrew Feller <andrew.feller@gmail.com> 1661707548 -0400
-committer Andrew Feller <andrew.feller@gmail.com> 1661707548 -0400
+author Andy Feller <andyfeller@github.com> 1661707548 -0400
+committer Andy Feller <andyfeller@github.com> 1661707548 -0400
 gpgsig -----BEGIN SSH SIGNATURE-----
  U1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgAuowLNeV7cU7+ho4jLGSa61imG
  JnxMf652Yfgxz9rVUAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5
