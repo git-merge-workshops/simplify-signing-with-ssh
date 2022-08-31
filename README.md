@@ -47,7 +47,7 @@
 
 This effort couldn't have happened without the support from many people, so thank you to the following who helped throughout the creation of this workshop:
 
-[@ppremk](https://github.com/ppremk), [@leereilly](https://github.com/leereilly), [@bval](https://github.com/bval), [@aaronkowall](https://github.com/aaronkowall), [@bestra](https://github.com/bestra), [@apdarr](https://github.com/apdarr), [@evgenyrahman](https://github.com/evgenyrahman)
+[![@ppremk](https://avatars.githubusercontent.com/ppremk?s=80)](github.com/ppremk) [![@leereilly](https://avatars.githubusercontent.com/leereilly?s=80)](github.com/leereilly) [![@bval](https://avatars.githubusercontent.com/bval?s=80)](github.com/bval) [![@aaronkowall](https://avatars.githubusercontent.com/aaronkowall?s=80)](github.com/aaronkowall) [![@bestra](https://avatars.githubusercontent.com/bestra?s=80)](github.com/bestra) [![@apdarr](https://avatars.githubusercontent.com/apdarr?s=80)](github.com/apdarr) [![@evgenyrahman](https://avatars.githubusercontent.com/evgenyrahman?s=80)](github.com/evgenyrahman)
 
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/
