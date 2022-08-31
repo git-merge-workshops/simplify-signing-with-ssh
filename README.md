@@ -28,8 +28,11 @@
 1. [Signing past commits and tags](exercises/sign-past-commits-tags.md)
 
 ## :rocket: Beyond
-1. [Case study: `bitcoin/bitcoin`](case-study-bitcoin.md)
 1. [Adoption challenges](adoption-challenges.md)
+1. [`bitcoin/bitcoin verify-commits`][bitcoin-verify-commits]
+   > Tooling for verification of PGP signed commits
+   >
+   > This is an incomplete work in progress, but currently includes a pre-push hook script (`pre-push-hook.sh`) for maintainers to ensure that their own commits are PGP signed (nearly always merge commits), as well as a Python 3 script to verify commits against a trusted keys list.
 
 ## :books: Resources
 - Git commands used for signing and verifying
@@ -40,6 +43,7 @@
   - [`git verify tag`][git-verify-tag]
 - [Git 2.34.0 changelog][git-changelog-2.34.0]
 
+[bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/
 [git-commit-sign]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--Sltkeyidgt
 [git-config-gpgsshallowedSignersFile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile
