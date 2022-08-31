@@ -1,4 +1,4 @@
-<h1 align="center">&#127890; Adoption challenges</h1>
+<h1 align="center">&#129300; Adoption challenges</h1>
 
 <hr />
 <p align="right">
