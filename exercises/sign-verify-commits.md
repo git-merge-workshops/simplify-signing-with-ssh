@@ -40,6 +40,8 @@
      1. SSH private key not being added
      1. mismatch between SSH private and public keys
 
+     Try following the steps in https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 1. **Confirm SSH commit verification is setup correctly**
 
    ```shell
@@ -84,12 +86,12 @@
    > git config --global log.showSignature true
    > ```
 
-   For more information about these Git configuration options, see [`commit.gpgSign`][man-git-config-commitgpgsign], [`log.showSignature`][man-git-config-logshowsignature].
+   For more information about these Git configuration options, see `commit.gpgSign`[^man-git-config-commitgpgsign], `log.showSignature`[^man-git-config-logshowsignature].
   
 <hr />
 <p align="right">
   Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
-[man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
-[man-git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
+[^man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
+[^man-git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
