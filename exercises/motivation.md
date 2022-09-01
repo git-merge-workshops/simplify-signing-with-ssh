@@ -22,7 +22,7 @@ Which of these 2 pull requests would you accept?
   <img width="1792" alt="Screenshot depicting pull request with verified changes" src="https://user-images.githubusercontent.com/2089743/187014106-a5ccc564-ecc2-4f62-816d-2f6abd875143.png" />
 </p>
 
-Due to the decentralized nature of Git, authenticity can only be established by [signing changes](https://git-scm.com/docs/signature-format#_overview), which involves capturing the additional `gpgsig` header information with `commit` or `tag` [Git objects][git-scm-internals-storage]:
+Due to the decentralized nature of Git, authenticity can only be established by [signing changes](https://git-scm.com/docs/signature-format#_overview), which involves capturing the additional `gpgsig` header information with `commit` or `tag` Git objects[^git-scm-internals-storage]:
 
 ```shell
 ~/simplify-signing-with-ssh (main) $ git log
@@ -55,7 +55,7 @@ Merge branch 'main' of github.com:git-merge-workshops/simplify-signing-with-ssh
 
 Our reliance on software and the increasingly complex ways that changes are authored have raised the need to secure our supply chains.
 
-In the May 2021 White House "[Executive Order on Improving the Nation’s Cybersecurity][whitehouse-improving-nations-cybersecurity]" executive order, enhancing software supply chain had a whole section devoted to establishing trust:
+In the May 2021 White House "[Executive Order on Improving the Nation’s Cybersecurity][^whitehouse-improving-nations-cybersecurity]" executive order, enhancing software supply chain had a whole section devoted to establishing trust:
 
 - `4.e.iii`
 
@@ -69,15 +69,15 @@ In the May 2021 White House "[Executive Order on Improving the Nation’s Cybers
 
   > ensuring and attesting, to the extent practicable, to the integrity and provenance of open source software used within any portion of a product.
 
-Expanding existing signing support for [GPG][git-1.7.9-releasenotes] and [X509][git-2.19.0-releasenotes] signing, [Git 2.34][git-2.34-tidbits] added SSH signing support, which we hope lowers barriers to improving code authenticity.
+Expanding existing signing support for GPG[^git-1.7.9-releasenotes] and X509[^git-2.19.0-releasenotes] signing, Git 2.34[^git-2.34.0-tidbits] added SSH signing support, which we hope lowers barriers to improving code authenticity.
 
 <hr />
 <p align="right">
   Next: <a href="setup-workstation.md">Setup workstation</a>
 </p>
 
-[git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
-[git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
-[git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
-[git-scm-internals-storage]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_object_storage
-[whitehouse-improving-nations-cybersecurity]: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
+[^git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
+[^git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
+[^git-2.34.0-tidbits]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
+[^git-scm-internals-storage]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_object_storage
+[^whitehouse-improving-nations-cybersecurity]: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
