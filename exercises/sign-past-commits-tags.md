@@ -109,9 +109,9 @@
 
 ## Miscellany
 
-1. **Force pushing possibly necessary depending on whether commits and tags were previously pushed**
+1. **Force pushing might be necessary depending on whether commits and tags were previously pushed** 
 
-1. **Signing old commits or tags might require setting `GIT_COMMITTER_DATE` to preserve historical date**
+1. **Signing old commits or tags might require [setting the `GIT_COMMITTER_DATE` environment variable](https://git-scm.com/docs/git-commit/2.24.0#_date_formats) to preserve historical datetime**
 
 <hr />
 <p align="right">

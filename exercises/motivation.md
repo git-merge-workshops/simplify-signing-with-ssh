@@ -55,7 +55,7 @@ Merge branch 'main' of github.com:git-merge-workshops/simplify-signing-with-ssh
 
 Our reliance on software and the increasingly complex ways that changes are authored have raised the need to secure our supply chains.
 
-In the May 2021 White House "[Executive Order on Improving the Nation’s Cybersecurity][whitehouse-improving-nations-cybersecurity]" executive order, enhancing software supply chain had a whole section devoted to establishing trust:
+In the May 2021, the White House released the "[Executive Order on Improving the Nation’s Cybersecurity][whitehouse-improving-nations-cybersecurity]" executive order, which contains a section "Enhancing Software Supply Chain Security" stating:
 
 - `4.e.iii`
 
@@ -69,7 +69,7 @@ In the May 2021 White House "[Executive Order on Improving the Nation’s Cybers
 
   > ensuring and attesting, to the extent practicable, to the integrity and provenance of open source software used within any portion of a product.
 
-Expanding existing signing support for [GPG][git-1.7.9-releasenotes] and [X509][git-2.19.0-releasenotes] signing, [Git 2.34][git-2.34-tidbits] added SSH signing support, which we hope lowers barriers to improving code authenticity.
+Expanding existing signing support for [GPG][git-1.7.9-releasenotes] and [X509][git-2.19.0-releasenotes] signing, [Git 2.34][git-2.34-tidbits] added SSH signing support, which we should lower barriers to improving code authenticity.
 
 <hr />
 <p align="right">

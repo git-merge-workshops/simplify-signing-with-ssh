@@ -51,7 +51,7 @@
    ```
 
    > **Note**
-   > If you are using a legacy system that doesn't support the Ed25519 algorithm, use 4096-bit RSA keys for workshop:
+   > If you are using a legacy system that doesn't support the Ed25519 algorithm, use 4096-bit RSA keys for this workshop:
    >
    > ```shell
    > ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
