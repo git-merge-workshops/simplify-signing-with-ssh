@@ -47,7 +47,16 @@
 
 This effort couldn't have happened without the support from many people, so thank you to the following who helped throughout the creation of this workshop:
 
-[![@ppremk](https://avatars.githubusercontent.com/ppremk?s=80)](https://github.com/ppremk) [![@leereilly](https://avatars.githubusercontent.com/leereilly?s=80)](https://github.com/leereilly) [![@bval](https://avatars.githubusercontent.com/bval?s=80)](https://github.com/bval) [![@aaronkowall](https://avatars.githubusercontent.com/aaronkowall?s=80)](https://github.com/aaronkowall) [![@bestra](https://avatars.githubusercontent.com/bestra?s=80)](https://github.com/bestra) [![@apdarr](https://avatars.githubusercontent.com/apdarr?s=80)](https://github.com/apdarr) [![@evgenyrahman](https://avatars.githubusercontent.com/evgenyrahman?s=80)](https://github.com/evgenyrahman)
+[![@ppremk](https://avatars.githubusercontent.com/ppremk?s=80)](https://github.com/ppremk)
+[![@leereilly](https://avatars.githubusercontent.com/leereilly?s=80)](https://github.com/leereilly)
+[![@bval](https://avatars.githubusercontent.com/bval?s=80)](https://github.com/bval)
+[![@aaronkowall](https://avatars.githubusercontent.com/aaronkowall?s=80)](https://github.com/aaronkowall)
+[![@bestra](https://avatars.githubusercontent.com/bestra?s=80)](https://github.com/bestra)
+[![@apdarr](https://avatars.githubusercontent.com/apdarr?s=80)](https://github.com/apdarr)
+[![@evgenyrahman](https://avatars.githubusercontent.com/evgenyrahman?s=80)](https://github.com/evgenyrahman)
+[![@vcsjones](https://avatars.githubusercontent.com/vcsjones?s=80)](https://github.com/vcsjones)
+[![@ashishkeshan](https://avatars.githubusercontent.com/ashishkeshan?s=80)](https://github.com/ashishkeshan)
+[![@lumaxis](https://avatars.githubusercontent.com/lumaxis?s=80)](https://github.com/lumaxis)
 
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/
