@@ -22,7 +22,7 @@ Which of these 2 pull requests would you accept?
   <img width="1792" alt="Screenshot depicting pull request with verified changes" src="https://user-images.githubusercontent.com/2089743/187014106-a5ccc564-ecc2-4f62-816d-2f6abd875143.png" />
 </p>
 
-Due to the decentralized nature of Git, authenticity can only be established by signing changes, which involves capturing the additional `gpgsig` header information with the [Git objects][git-scm-internals-storage]:
+Due to the decentralized nature of Git, authenticity can only be established by [signing changes](https://git-scm.com/docs/signature-format#_overview), which involves capturing the additional `gpgsig` header information with `commit` or `tag` [Git objects][git-scm-internals-storage]:
 
 ```shell
 ~/simplify-signing-with-ssh (main) $ git log
