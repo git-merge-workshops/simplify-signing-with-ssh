@@ -33,7 +33,7 @@
 
      :disappointed_relieved: Do not to worry!  This is error is likely due to missing SSH signing configuration from "<a href="setup-workstation.md">Setup workstation</a>".
 
-1. **Confirm SSH tag verifying is setup correctly**
+1. **Confirm SSH tag verification is setup correctly**
 
    ```shell
    git tag -v v1.0.0

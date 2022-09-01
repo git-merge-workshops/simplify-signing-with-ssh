@@ -26,7 +26,7 @@
    should result in something like:
 
    ```shell
-   Author: Andrew Feller <andrew.feller@gmail.com>
+   Author: Andy Feller <andyfeller@github.com>
    Date:   Tue Aug 30 19:09:59 2022 -0400
 
        Setup for signing old commits
@@ -43,8 +43,8 @@
    should result in something like:
 
    ```shell
-   Good "git" signature for andrew.feller@gmail.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
-   Author: Andrew Feller <andrew.feller@gmail.com>
+   Good "git" signature for andyfeller@github.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
+   Author: Andy Feller <andyfeller@github.com>
    Date:   Tue Aug 30 19:24:11 2022 -0400
 
        Setup for signing old commits
@@ -71,7 +71,7 @@
    object c943063376a07d7e0d0a2de0a8037e35b1616ce6
    type commit
    tag v1.1.0
-   tagger Andrew Feller <andrew.feller@gmail.com> 1661902600 -0400
+   tagger Andy Feller <andyfeller@github.com> 1661902600 -0400
 
    Setup for signing old tags
    error: no signature found
@@ -98,11 +98,11 @@
    and
 
    ```shell
-   Good "git" signature for andrew.feller@gmail.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
+   Good "git" signature for andyfeller@github.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
    object c91e5fb7cc54be438808cce6c91f31b26434e565
    type tag
    tag v1.1.0
-   tagger Andrew Feller <andrew.feller@gmail.com> 1661902772 -0400
+   tagger Andy Feller <andyfeller@github.com> 1661902772 -0400
 
    Setup for signing old tags
    ```
