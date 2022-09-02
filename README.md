@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="150" height="150" src="https://ghicons.github.com/assets/images/blue/png/Security.png" />
+</p>
+
 <h1 align="center">Simplify signing Git commits and tags with SSH keys</h1>
 <h5 align="center">@andyfeller</h3>
 
