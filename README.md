@@ -8,7 +8,7 @@
   <a href="#books-resources">Resources</a>
 </p>
 
-> In this workshop, participants learn how to secure Git commits using the new OpenSSH feature.  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
+> In this workshop, participants learn how to secure Git commits using [the new OpenSSH feature](https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/).  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
 
 ## :mega: Prerequisites
 - Git 2.34 or newer
@@ -42,6 +42,21 @@
   - [`git verify commit`][git-verify-commit]
   - [`git verify tag`][git-verify-tag]
 - [Git 2.34.0 changelog][git-changelog-2.34.0]
+
+## :sparkles: Thanks
+
+This effort couldn't have happened without the support from many people, so thank you to the following who helped throughout the creation of this workshop:
+
+[![@ppremk](https://avatars.githubusercontent.com/ppremk?s=80)](https://github.com/ppremk)
+[![@leereilly](https://avatars.githubusercontent.com/leereilly?s=80)](https://github.com/leereilly)
+[![@bval](https://avatars.githubusercontent.com/bval?s=80)](https://github.com/bval)
+[![@aaronkowall](https://avatars.githubusercontent.com/aaronkowall?s=80)](https://github.com/aaronkowall)
+[![@bestra](https://avatars.githubusercontent.com/bestra?s=80)](https://github.com/bestra)
+[![@apdarr](https://avatars.githubusercontent.com/apdarr?s=80)](https://github.com/apdarr)
+[![@evgenyrahman](https://avatars.githubusercontent.com/evgenyrahman?s=80)](https://github.com/evgenyrahman)
+[![@vcsjones](https://avatars.githubusercontent.com/vcsjones?s=80)](https://github.com/vcsjones)
+[![@ashishkeshan](https://avatars.githubusercontent.com/ashishkeshan?s=80)](https://github.com/ashishkeshan)
+[![@lumaxis](https://avatars.githubusercontent.com/lumaxis?s=80)](https://github.com/lumaxis)
 
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/

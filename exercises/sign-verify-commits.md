@@ -40,7 +40,7 @@
      1. SSH private key not being added
      1. mismatch between SSH private and public keys
 
-1. **Confirm SSH commit verifying is setup correctly**
+1. **Confirm SSH commit verification is setup correctly**
 
    ```shell
    git log --show-signature
