@@ -33,10 +33,10 @@
 
      :disappointed_relieved: Do not to worry!  This is error is likely due to missing SSH signing configuration from "<a href="setup-workstation.md">Setup workstation</a>".
 
-1. **Confirm SSH tag verification is setup correctly**
+1. **Verify SSH tag is signed and trusted**
 
    ```shell
-   git tag -v v1.0.0
+   git verify-tag -v v1.0.0
    ```
 
    Possible responses:
@@ -72,11 +72,12 @@
    > git config --global tag.gpgsign true
    > ```
 
-   For more information about these Git configuration options, see [`tag.gpgSign`][man-git-config-taggpgsign].
+   For more information about these Git configuration options, see [`tag.gpgSign`][git-config-taggpgsign].
 
 <hr />
 <p align="right">
   Next: <a href="sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
-[man-git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign
+[git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign
+[git-verify-tag]: https://git-scm.com/docs/git-verify-tag

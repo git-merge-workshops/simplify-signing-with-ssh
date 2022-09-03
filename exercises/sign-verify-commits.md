@@ -40,7 +40,27 @@
      1. SSH private key not being added
      1. mismatch between SSH private and public keys
 
-1. **Confirm SSH commit verification is setup correctly**
+   For more information about signing commits, see "[`git commit -S`][git-commit-sign]".
+
+1. **Verify SSH commit is signed and trusted**
+
+   ```shell
+   git verify-commit -v HEAD^
+   ```
+
+   ```shell
+   tree 0ef02896bdd7ac3eeabf688e6a6de47e9656c4a6
+   parent f425cff419cf75ae9689cbe7de4d0281549d53e3
+   author Andy Feller <andyfeller@github.com> 1661482122 -0400
+   committer Andy Feller <andyfeller@github.com> 1661482122 -0400
+   
+   Confirm SSH signing setup
+   Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
+   ```
+
+   For more information about verifying commits, see "[`git verify-commit`][git-verify-commit]".
+
+1. **Confirm logs show SSH commit sign status**
 
    ```shell
    git log --show-signature
@@ -69,6 +89,8 @@
 
      :disappointed_relieved: Do not to worry!  This is error is likely due to format of `gpg.ssh.allowedSignersFile` file as SSH public keys cannot be copied as-is into the file.
 
+   For more information about signatures in logs, see "[`git log --show-signature`][git-log-showsignature]".
+
 1. **Configure additional SSH commit signing and verifying for workshop repository specifically:**
 
    ```shell
@@ -84,12 +106,14 @@
    > git config --global log.showSignature true
    > ```
 
-   For more information about these Git configuration options, see [`commit.gpgSign`][man-git-config-commitgpgsign], [`log.showSignature`][man-git-config-logshowsignature].
+   For more information about these Git configuration options, see [`commit.gpgSign`][git-config-commitgpgsign], [`log.showSignature`][git-config-logshowsignature].
   
 <hr />
 <p align="right">
   Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
-[man-git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
-[man-git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
+[git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
+[git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
+[git-verify-commit]: https://git-scm.com/docs/git-verify-commit
+[git-log-showsignature]: https://git-scm.com/docs/git-log#Documentation/git-log.txt---show-signature

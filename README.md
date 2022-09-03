@@ -45,7 +45,7 @@
   - [`git tag`][git-tag-sign]
   - [`git verify commit`][git-verify-commit]
   - [`git verify tag`][git-verify-tag]
-- [Git 2.34.0 changelog][git-changelog-2.34.0]
+- [Git 2.34.0 release notes][git-2.34.0-releasenotes]
 
 ## :sparkles: Thanks
 
@@ -63,7 +63,7 @@ This effort couldn't have happened without the support from many people, so than
 [![@lumaxis](https://avatars.githubusercontent.com/lumaxis?s=80)](https://github.com/lumaxis)
 
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
-[git-changelog-2.34.0]: https://lore.kernel.org/git/xmqq8rxpgwki.fsf@gitster.g/
+[git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
 [git-commit-sign]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--Sltkeyidgt
 [git-config-gpgsshallowedSignersFile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile
 [git-merge-sign]: https://git-scm.com/docs/git-merge#Documentation/git-merge.txt--Sltkeyidgt

@@ -69,15 +69,27 @@ In the May 2021, the White House released the "[Executive Order on Improving the
 
   > ensuring and attesting, to the extent practicable, to the integrity and provenance of open source software used within any portion of a product.
 
-Expanding existing signing support for [GPG][git-1.7.9-releasenotes] and [X509][git-2.19.0-releasenotes] signing, [Git 2.34][git-2.34.0-releasenotes] added SSH signing support, which we should lower barriers to improving code authenticity.
+## Git 2.34.0 introduces SSH signing
+
+<img align="right" src="https://github.blog/wp-content/uploads/2021/11/git-2-3-4_social-card.png?resize=268%2C141" />
+
+On November 15th 2021, [Git 2.34.0 was released][git-2.34.0-announcement] with much real estate focused on support sparse indexes, multi-pack reachability bitmaps, and a new default merge strategy.
+
+However in the [tidbits section][git-2.34.0-announcement-ssh], we heard about support for SSH signing as an alternative to existing signing approaches:
+
+> But the experience of using GPG and maintaining keys can be somewhat cumbersome. One alternative is to use a new feature of OpenSSH (released back in [OpenSSH 8.0](https://www.openssh.com/txt/release-8.0)) that allows using the SSH key you likely already have as a signing key.
+
+Expanding existing signing support for GPG[^git-1.7.9-releasenotes] and X509[^git-2.19.0-releasenotes] signing, SSH signing support is aimed at lowering barriers to improved code authenticity.
 
 <hr />
 <p align="right">
   Next: <a href="setup-workstation.md">Setup workstation</a>
 </p>
 
-[git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
-[git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
-[git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
+[^git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
+[^git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
+[^git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
+[git-2.34.0-announcement]: https://github.blog/2021-11-15-highlights-from-git-2-34/
+[git-2.34.0-announcement-ssh]: https://github.blog/2021-11-15-highlights-from-git-2-34/#tidbits
 [git-scm-internals-storage]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_object_storage
 [whitehouse-improving-nations-cybersecurity]: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
