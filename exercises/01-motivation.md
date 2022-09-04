@@ -2,7 +2,7 @@
 
 <p align="center">
   Motivation •  
-  <a href="setup-workstation.md">Setup workstation</a>
+  <a href="02-setup-workstation.md">Setup workstation</a>
 </p>
 
 ## Outcomes
@@ -83,7 +83,7 @@ Expanding existing signing support for GPG[^git-1.7.9-releasenotes] and X509[^gi
 
 <hr />
 <p align="right">
-  Next: <a href="setup-workstation.md">Setup workstation</a>
+  Next: <a href="02-setup-workstation.md">Setup workstation</a>
 </p>
 
 [git-2.34.0-announcement]: https://github.blog/2021-11-15-highlights-from-git-2-34/

@@ -1,9 +1,9 @@
 <h1 align="center">&#127890; Exercise: Signing and verifying commits</h1>
 
 <p align="center">
-  <a href="setup-workstation.md">Setup workstation</a> •  
+  <a href="02-setup-workstation.md">Setup workstation</a> •  
   Signing and verifying commits •  
-  <a href="sign-verify-tags.md">Signing and verifying tags</a>
+  <a href="04-sign-verify-merges.md">Signing and verifying merges</a>
 </p>
 
 ## Outcomes
@@ -110,7 +110,7 @@
   
 <hr />
 <p align="right">
-  Next: <a href="sign-verify-tags.md">Signing and verifying tags</a>
+  Next: <a href="04-sign-verify-merges.md">Signing and verifying merges</a>
 </p>
 
 [git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign

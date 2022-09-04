@@ -25,11 +25,12 @@
   - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
 ## :school_satchel: Exercises 
-1. [Motivation](exercises/motivation.md)
-1. [Setup workstation](exercises/setup-workstation.md)
-1. [Signing and verifying commits](exercises/sign-verify-commits.md)
-1. [Signing and verifying tags](exercises/sign-verify-tags.md)
-1. [Signing past commits and tags](exercises/sign-past-commits-tags.md)
+1. [Motivation](exercises/01-motivation.md)
+1. [Setup workstation](exercises/02-setup-workstation.md)
+1. [Signing and verifying commits](exercises/03-sign-verify-commits.md)
+1. [Signing and verifying merges](exercises/04-sign-verify-merges.md)
+1. [Signing and verifying tags](exercises/05-sign-verify-tags.md)
+1. [Signing past commits and tags](exercises/06-sign-past-commits-tags.md)
 
 ## :rocket: Beyond
 1. [:thinking: Author opinion: Enterprise challenges](enterprise-challenges.md)
