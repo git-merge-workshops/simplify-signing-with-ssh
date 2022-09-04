@@ -86,10 +86,10 @@ Expanding existing signing support for GPG[^git-1.7.9-releasenotes] and X509[^gi
   Next: <a href="setup-workstation.md">Setup workstation</a>
 </p>
 
-[^git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
-[^git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
-[^git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
 [git-2.34.0-announcement]: https://github.blog/2021-11-15-highlights-from-git-2-34/
 [git-2.34.0-announcement-ssh]: https://github.blog/2021-11-15-highlights-from-git-2-34/#tidbits
 [git-scm-internals-storage]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_object_storage
 [whitehouse-improving-nations-cybersecurity]: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
+[^git-1.7.9-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.9.txt
+[^git-2.19.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.19.0.txt
+[^git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
