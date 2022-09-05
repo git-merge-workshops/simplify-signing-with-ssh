@@ -68,8 +68,6 @@
 
      :partying_face: Congratulations!  SSH merge verification setup is good.
 
-   For more information about signatures in logs, see "[`git log --show-signature`][git-log-showsignature]".
-
 1. **Configure additional SSH merge signing and verifying for workshop repository specifically:**
 
    ```shell
