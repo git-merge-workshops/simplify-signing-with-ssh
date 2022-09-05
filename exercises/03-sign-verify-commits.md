@@ -16,6 +16,12 @@
 
 ## Steps
 
+1. **Create a branch where changes will be committed**
+
+   ```shell
+   git checkout -b exercises-$(whoami)
+   ```
+
 1. **Confirm SSH commit signing is setup correctly**
 
    ```shell
@@ -115,5 +121,6 @@
 
 [git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
 [git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
+[git-commit-sign]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--Sltkeyidgt
 [git-verify-commit]: https://git-scm.com/docs/git-verify-commit
 [git-log-showsignature]: https://git-scm.com/docs/git-log#Documentation/git-log.txt---show-signature

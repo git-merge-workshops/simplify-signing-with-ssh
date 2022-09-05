@@ -1,4 +1,4 @@
-<h1 align="center">&#127890; Exercise: Signing and verifying commits</h1>
+<h1 align="center">&#127890; Exercise: Signing and verifying merges</h1>
 
 <p align="center">
   <a href="03-sign-verify-commits.md">Signing and verifying commits</a>
@@ -8,7 +8,7 @@
 
 ## Outcomes
 
-> In this exercise, the process for signing and verifying commits is covered including:
+> In this exercise, the process for signing and verifying merges is covered including:
 >
 > 1. Explicitly sign and verify commits
 > 1. Troubleshooting problems
@@ -16,49 +16,37 @@
 
 ## Steps
 
-1. **Confirm SSH commit signing is setup correctly**
+> **Note**
+> This exercise uses preparation done previously in "[Signing and verifying commits](03-sign-verify-commits.md)".
+
+1. **Checkout the default branch of the repository in preparation for the merge**
 
    ```shell
-   git commit -S --allow-empty --message="Confirm SSH commit signing setup"
+   git checkout main
+   ```
+
+1. **Merge branch from previous exercise ensuring signatures are verified**
+
+   ```shell
+   git merge --verify-signatures exercises-$(whoami) --message "Confirm SSH merge signing setup"
    ```
 
    Possible results:
 
    - ```
-     [main f425cff] Confirm SSH commit signing setup
+     Commit 14a73ae has a good GPG signature by andyfeller@github.com
+     Merge made by the 'ort' strategy.
      ```
 
-     :partying_face: Congratulations!  SSH signing setup including SSH agent is good.
+     :partying_face: Congratulations!  SSH merge signing is good.
 
    - ```
-     error: Load key "/var/folders/xb/svzskj1x77x3qsmwx1d84nqc0000gn/T//.git_signing_key_tmpW0EAyi": invalid format?
+     fatal: Commit 1a18ff8 does not have a GPG signature.
      ```
 
-     :disappointed_relieved: Do not to worry!  This is error is likely due to:
+     :disappointed_relieved: Do not to worry!  This is error is likely due to the last commit being signed.
 
-     1. SSH agent being stopped
-     1. SSH private key not being added
-     1. mismatch between SSH private and public keys
-
-   For more information about signing commits, see "[`git commit -S`][git-commit-sign]".
-
-1. **Verify SSH commit is signed and trusted**
-
-   ```shell
-   git verify-commit -v HEAD^
-   ```
-
-   ```shell
-   tree 0ef02896bdd7ac3eeabf688e6a6de47e9656c4a6
-   parent f425cff419cf75ae9689cbe7de4d0281549d53e3
-   author Andy Feller <andyfeller@github.com> 1661482122 -0400
-   committer Andy Feller <andyfeller@github.com> 1661482122 -0400
-   
-   Confirm SSH signing setup
-   Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
-   ```
-
-   For more information about verifying commits, see "[`git verify-commit`][git-verify-commit]".
+   For more information about signing merges, see "[`git merge --verify-signatures`][git-merge-verifysignatures]".
 
 1. **Confirm logs show SSH commit sign status**
 
@@ -69,51 +57,38 @@
    Possible results:
 
    - ```
-     Good "git" signature for your_email@example.com with ED25519 key SHA256:...
+     commit 5bd0c89361d4ed6242fc464f9fe80a1b49d80027 (HEAD -> main, origin/main, origin/HEAD)
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
+     Merge: f41ed7f 14a73ae
+     Author: Andy Feller <andyfeller@github.com>
+     Date:   Sun Sep 4 18:13:43 2022 -0400
+     
+         Confirm SSH merge signing setup
      ```
 
-     :partying_face: Congratulations!  SSH commit verifying setup including SSH agent is good.
-
-   - ```
-     error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification
-     ```
-
-     :disappointed_relieved: Do not to worry!  This is error is likely due to missing `gpg.ssh.allowedSignersFile` configuration above.
-
-   - ```
-     Good "git" signature with ED25519 key SHA256:...
-     /path/to/.ssh/allowed_signers:1: invalid key^M
-     sig_find_principals: sshsig_get_principal: key not found^M
-     No principal matched.
-     ```
-
-     :disappointed_relieved: Do not to worry!  This is error is likely due to format of `gpg.ssh.allowedSignersFile` file as SSH public keys cannot be copied as-is into the file.
+     :partying_face: Congratulations!  SSH merge verification setup is good.
 
    For more information about signatures in logs, see "[`git log --show-signature`][git-log-showsignature]".
 
-1. **Configure additional SSH commit signing and verifying for workshop repository specifically:**
+1. **Configure additional SSH merge signing and verifying for workshop repository specifically:**
 
    ```shell
-   git config commit.gpgsign true
-   git config log.showSignature true
+   git config merge.verifySignatures true
    ```
 
    > **Note**
    > To globally configure SSH signing and verifying, use the `--global` flag:
    >
    > ```shell
-   > git config --global commit.gpgsign true
-   > git config --global log.showSignature true
+   > git config --global merge.verifySignatures true
    > ```
 
-   For more information about these Git configuration options, see [`commit.gpgSign`][git-config-commitgpgsign], [`log.showSignature`][git-config-logshowsignature].
+   For more information about these Git configuration options, see [`merge.verifySignatures`][git-merge-verifysignatures].
   
 <hr />
 <p align="right">
   Next: <a href="05-sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
-[git-config-commitgpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign
-[git-config-logshowsignature]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-logshowSignature
-[git-verify-commit]: https://git-scm.com/docs/git-verify-commit
-[git-log-showsignature]: https://git-scm.com/docs/git-log#Documentation/git-log.txt---show-signature
+[git-config-mergeverifysignatures]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeverifySignatures
+[git-merge-verifysignatures]: https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---verify-signatures
