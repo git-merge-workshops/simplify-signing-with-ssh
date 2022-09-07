@@ -62,6 +62,7 @@ This effort couldn't have happened without the support from many people, so than
 [![@vcsjones](https://avatars.githubusercontent.com/vcsjones?s=80)](https://github.com/vcsjones)
 [![@ashishkeshan](https://avatars.githubusercontent.com/ashishkeshan?s=80)](https://github.com/ashishkeshan)
 [![@lumaxis](https://avatars.githubusercontent.com/lumaxis?s=80)](https://github.com/lumaxis)
+[![@milemons](https://avatars.githubusercontent.com/milemons?s=80)](https://github.com/milemons)
 
 [bitcoin-verify-commits]: https://github.com/bitcoin/bitcoin/tree/master/contrib/verify-commits
 [git-2.34.0-releasenotes]: https://github.com/git/git/blob/master/Documentation/RelNotes/2.34.0.txt
