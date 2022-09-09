@@ -17,9 +17,7 @@
 Which of these 2 pull requests would you accept?
 
 <p align="center">
-  <img width="1792" alt="Screenshot depicting pull request with unverified changes" src="https://user-images.githubusercontent.com/2089743/187014107-4bb86da3-fd12-4b9f-8877-d518ebfe8dfc.png" />
-
-  <img width="1792" alt="Screenshot depicting pull request with verified changes" src="https://user-images.githubusercontent.com/2089743/187014106-a5ccc564-ecc2-4f62-816d-2f6abd875143.png" />
+  <img alt="Screenshot comparing 2 pull requests demonstrating unverified and verified changes" src="https://user-images.githubusercontent.com/2089743/189262929-8af8d974-7b49-494e-83a2-dbcdf72a0e7d.png" />
 </p>
 
 Due to the decentralized nature of Git, authenticity can only be established by [signing changes][git-signature-format], which involves capturing the additional `gpgsig` header information with `commit` or `tag` Git objects[^git-scm-internals-storage]:
