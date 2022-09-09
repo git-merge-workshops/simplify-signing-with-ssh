@@ -9,7 +9,7 @@
   <a href="#mega-prerequisites">&#128227; Prerequisites</a> •  
   <a href="motivation.md">&#128161; Motivation</a> •  
   <a href="#schoolsatchel-exercises">&#127890; Exercises</a> •  
-  <a href="#rocket-beyond">&#129300; Beyond</a> •  
+  <a href="#rocket-beyond">&#128640; Beyond</a> •  
   <a href="#books-resources">&#128218; Resources</a>
 </p>
 
