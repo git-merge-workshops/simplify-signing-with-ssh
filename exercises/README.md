@@ -3,7 +3,7 @@
 <p align="center">
   <a href="/README.md#mega-prerequisites">&#128227; Prerequisites</a> •  
   <a href="/motivation.md">&#128161; Motivation</a> •  
-  &#127890; Exercises •  
+  <a href="/README.md#schoolsatchel-exercises">&#127890; Exercises</a> •  
   <a href="/README.md#rocket-beyond">&#129300; Beyond</a> •  
   <a href="/README.md#books-resources">&#128218; Resources</a>
 </p>
