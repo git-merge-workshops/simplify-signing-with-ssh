@@ -1,9 +1,8 @@
 <h1 align="center">&#127890; Exercise: Setup workstation</h1>
 
 <p align="center">
-  <a href="01-motivation.md">Motivation</a> •  
   Setup workstation •  
-  <a href="03-sign-verify-commits.md">Signing and verifying commits</a>
+  <a href="02-sign-verify-commits.md">Signing and verifying commits</a>
 </p>
 
 ## Outcomes
@@ -110,7 +109,7 @@
 
 <hr />
 <p align="right">
-  Next: <a href="03-sign-verify-commits.md">Signing and verifying commits</a>
+  Next: <a href="02-sign-verify-commits.md">Signing and verifying commits</a>
 </p>
 
 [man-git-config-gpgsshallowedsignersfile]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile

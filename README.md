@@ -6,10 +6,11 @@
 <h5 align="center">@andyfeller</h3>
 
 <p align="center">
-  <a href="#mega-prerequisites">Prerequisites</a> •  
-  <a href="#schoolsatchel-exercises">Exercises</a> •  
-  <a href="#rocket-beyond">Beyond</a> •  
-  <a href="#books-resources">Resources</a>
+  <a href="#mega-prerequisites">&#128227; Prerequisites</a> •  
+  <a href="motivation.md">&#128161; Motivation</a> •  
+  <a href="#schoolsatchel-exercises">&#127890; Exercises</a> •  
+  <a href="#rocket-beyond">&#129300; Beyond</a> •  
+  <a href="#books-resources">&#128218; Resources</a>
 </p>
 
 > In this workshop, participants learn how to secure Git commits using [the new OpenSSH feature](https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/).  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
@@ -25,12 +26,11 @@
   - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
 ## :school_satchel: Exercises 
-1. [Motivation](exercises/01-motivation.md)
-1. [Setup workstation](exercises/02-setup-workstation.md)
-1. [Signing and verifying commits](exercises/03-sign-verify-commits.md)
-1. [Signing and verifying merges](exercises/04-sign-verify-merges.md)
-1. [Signing and verifying tags](exercises/05-sign-verify-tags.md)
-1. [Signing past commits and tags](exercises/06-sign-past-commits-tags.md)
+1. [Setup workstation](exercises/01-setup-workstation.md)
+1. [Signing and verifying commits](exercises/02-sign-verify-commits.md)
+1. [Signing and verifying merges](exercises/03-sign-verify-merges.md)
+1. [Signing and verifying tags](exercises/04-sign-verify-tags.md)
+1. [Signing past commits and tags](exercises/05-sign-past-commits-tags.md)
 
 ## :rocket: Beyond
 1. [:thinking: Author opinion: Enterprise challenges](enterprise-challenges.md)

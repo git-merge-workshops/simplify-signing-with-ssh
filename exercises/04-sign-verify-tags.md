@@ -1,9 +1,9 @@
 <h1 align="center">&#127890; Exercise: Signing and verifying tags</h1>
 
 <p align="center">
-  <a href="04-sign-verify-merges.md">Signing and verifying merges</a> •  
+  <a href="03-sign-verify-merges.md">Signing and verifying merges</a> •  
   Signing and verifying tags •  
-  <a href="06-sign-past-commits-tags.md">Signing past commits and tags</a>
+  <a href="05-sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
 ## Outcomes
@@ -76,7 +76,7 @@
 
 <hr />
 <p align="right">
-  Next: <a href="06-sign-past-commits-tags.md">Signing past commits and tags</a>
+  Next: <a href="05-sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
 [git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign

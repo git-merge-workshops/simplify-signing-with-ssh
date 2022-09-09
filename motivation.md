@@ -1,8 +1,11 @@
-<h1 align="center">&#127890; Exercise: Motivation</h1>
+<h1 align="center">&#128161; Motivation</h1>
 
 <p align="center">
-  Motivation •  
-  <a href="02-setup-workstation.md">Setup workstation</a>
+  <a href="/README.md#mega-prerequisites">&#128227; Prerequisites</a> •  
+  <a href="/motivation.md">&#128161; Motivation</a> •  
+  <a href="/README.md#schoolsatchel-exercises">&#127890; Exercises</a> •  
+  <a href="/README.md#rocket-beyond">&#129300; Beyond</a> •  
+  <a href="/README.md#books-resources">&#128218; Resources</a>
 </p>
 
 ## Outcomes

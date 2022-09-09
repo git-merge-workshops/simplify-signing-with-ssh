@@ -1,7 +1,11 @@
 <h1 align="center">&#129300; Author opinion: Enterprise challenges</h1>
 
 <p align="center">
-  <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
+  <a href="/README.md#mega-prerequisites">&#128227; Prerequisites</a> •  
+  <a href="/motivation.md">&#128161; Motivation</a> •  
+  <a href="/README.md#schoolsatchel-exercises">&#127890; Exercises</a> •  
+  <a href="/README.md#rocket-beyond">&#129300; Beyond</a> •  
+  <a href="/README.md#books-resources">&#128218; Resources</a>
 </p>
 
 > **Note**

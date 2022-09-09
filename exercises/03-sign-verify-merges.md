@@ -1,9 +1,9 @@
 <h1 align="center">&#127890; Exercise: Signing and verifying merges</h1>
 
 <p align="center">
-  <a href="03-sign-verify-commits.md">Signing and verifying commits</a>
+  <a href="02-sign-verify-commits.md">Signing and verifying commits</a>
   Signing and verifying merges •  
-  <a href="05-sign-verify-tags.md">Signing and verifying tags</a>
+  <a href="04-sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
 ## Outcomes
@@ -17,7 +17,7 @@
 ## Steps
 
 > **Note**
-> This exercise uses preparation done previously in "[Signing and verifying commits](03-sign-verify-commits.md)".
+> This exercise uses preparation done previously in "[Signing and verifying commits](02-sign-verify-commits.md)".
 
 1. **Checkout the default branch of the repository in preparation for the merge**
 
@@ -85,7 +85,7 @@
   
 <hr />
 <p align="right">
-  Next: <a href="05-sign-verify-tags.md">Signing and verifying tags</a>
+  Next: <a href="04-sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
 [git-config-mergeverifysignatures]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeverifySignatures
