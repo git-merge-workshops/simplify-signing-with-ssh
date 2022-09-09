@@ -51,7 +51,7 @@
 1. **Verify SSH commit is signed and trusted**
 
    ```shell
-   git verify-commit -v HEAD^
+   git verify-commit -v HEAD
    ```
 
    ```shell
