@@ -10,7 +10,28 @@ Signing merges from one branch into another is achieved via the [`--verify-signa
 
 > Verify that the tip commit of the side branch being merged is signed with a valid key, i.e. a key that has a valid uid: in the default trust model, this means the signing key has been signed by a trusted key. If the tip commit of the side branch is not signed with a valid key, the merge is aborted.
 
-This means that Git will only check that the tip or last commit of the branches are signed, not every commit.
+In examining the underlying code[^git-merge-verifysignatures-code], this appears to work by checking the latest commits of the branches involved in the merge, not every commit:
+
+```c
+	/*
+	 * All the rest are the commits being merged; prepare
+	 * the standard merge summary message to be appended
+	 * to the given message.
+	 */
+	remoteheads = collect_parents(head_commit, &head_subsumed,
+				      argc, argv, &merge_msg);
+
+	if (!head_commit || !argc)
+		usage_with_options(builtin_merge_usage,
+			builtin_merge_options);
+
+	if (verify_signatures) {
+		for (p = remoteheads; p; p = p->next) {
+			verify_merge_signature(p->item, verbosity,
+					       check_trust_level);
+		}
+	}
+```
 
 ## Outcomes
 
@@ -182,3 +203,4 @@ At the end of this exercise, the repository should look like:
 
 [git-config-mergeverifysignatures]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeverifySignatures
 [git-merge-verifysignatures]: https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---verify-signatures
+[^git-merge-verifysignatures-code]: https://github.com/git/git/blob/dd3f6c4cae7e3b15ce984dce8593ff7569650e24/builtin/merge.c#L1491
