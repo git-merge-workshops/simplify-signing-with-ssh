@@ -31,7 +31,7 @@
      - [MacOS](https://formulae.brew.sh/formula/openssh)
      - [Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
-   Afterwards, configure Git with your name and email address:
+   Afterwards, configure Git with your name and email address if necessary:
 
    ```shell
    git config --global user.name "Your Name"

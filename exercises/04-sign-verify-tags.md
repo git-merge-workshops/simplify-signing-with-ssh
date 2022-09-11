@@ -6,6 +6,12 @@
   <a href="05-sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
+One aspect of signing tags that might be new for participants is the notion of [**lightweight** and **annotated** tags][git-tags]:
+
+> A lightweight tag is very much like a branch that doesn’t change — it’s just a pointer to a specific commit.
+>
+> Annotated tags, however, are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It’s generally recommended that you create annotated tags so you can have all this information; but if you want a temporary tag or for some reason don’t want to keep the other information, lightweight tags are available too.
+
 ## Outcomes
 
 > In this exercise, the process for signing and verifying tags is covered including:
@@ -21,6 +27,8 @@
    ```shell
    git tag -s -m "Tagging v1.0.0 release" v1.0.0
    ```
+
+   <img alt="Git tree after creating v1.0.0 tag" src="assets/04-post-tag.png" width="600" height="394" />
 
    Possible responses:
 
@@ -74,10 +82,17 @@
 
    For more information about these Git configuration options, see [`tag.gpgSign`][git-config-taggpgsign].
 
+## End of exercise
+
+At the end of this exercise, the repository should look like:
+
+<img alt="Git tree at the end of the exercise" src="assets/04-end.png" width="600" height="394" />
+
 <hr />
 <p align="right">
   Next: <a href="05-sign-past-commits-tags.md">Signing past commits and tags</a>
 </p>
 
 [git-config-taggpgsign]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-taggpgSign
+[git-tags]: https://git-scm.com/book/en/v2/Git-Basics-Tagging#_creating_tags
 [git-verify-tag]: https://git-scm.com/docs/git-verify-tag

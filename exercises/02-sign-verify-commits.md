@@ -6,6 +6,10 @@
   <a href="03-sign-verify-merges.md">Signing and verifying merges</a>
 </p>
 
+Signing commits is where participants begin gaining experience.
+
+As the previous exercise was focused on workstation setup, this exercise has additional content intended to help troubleshoot possible errors that might arise.
+
 ## Outcomes
 
 > In this exercise, the process for signing and verifying commits is covered including:
@@ -39,6 +43,8 @@
    git add .
    git commit -S -m "Initialize workspace repository README"
    ```
+
+   <img alt="Git tree after commiting initial commit with README" src="assets/02-post-init.png" width="600" height="394" />
 
    Possible results:
 
@@ -128,7 +134,13 @@
    > ```
 
    For more information about these Git configuration options, see [`commit.gpgSign`][git-config-commitgpgsign], [`log.showSignature`][git-config-logshowsignature].
+
+## End of exercise
+
+At the end of this exercise, the repository should look like:
   
+<img alt="Git tree at the end of the exercise" src="assets/02-end.png" width="600" height="394" />
+
 <hr />
 <p align="right">
   Next: <a href="03-sign-verify-merges.md">Signing and verifying merges</a>

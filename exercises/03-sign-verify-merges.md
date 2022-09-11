@@ -6,6 +6,12 @@
   <a href="04-sign-verify-tags.md">Signing and verifying tags</a>
 </p>
 
+Signing merges from one branch into another is achieved via the [`--verify-signatures` flag][git-merge-verifysignatures] to `git merge`, which is important to understand how it works:
+
+> Verify that the tip commit of the side branch being merged is signed with a valid key, i.e. a key that has a valid uid: in the default trust model, this means the signing key has been signed by a trusted key. If the tip commit of the side branch is not signed with a valid key, the merge is aborted.
+
+This means that Git will only check that the tip or last commit of the branches are signed, not every commit.
+
 ## Outcomes
 
 > In this exercise, the process for signing and verifying merges is covered including:
@@ -51,6 +57,8 @@
    git commit -m "Adding hello-world script for v1.0.0 release"
    ```
 
+   <img alt="Git tree after commiting hello-world script on feature/v1.0.0 branch" src="assets/03-post-commit.png" width="600" height="394" />
+
 1. **Checkout the default branch to prepare for merging the feature branch**
 
    ```shell
@@ -75,11 +83,15 @@
    git commit -m "Expanding README for upcoming feature"
    ```
 
+   <img alt="Git tree after updating README before merge" src="assets/03-pre-merge.png" width="600" height="394" />
+
 1. **Merge the feature branch, ensuring signatures are verified**
 
    ```shell
    git merge --verify-signatures feature/v1.0.0 -m "Merging in work towards v1.0.0 release"
    ```
+
+   <img alt="Git tree after merging feature/v1.0.0 branch" src="assets/03-post-merge.png" width="600" height="394" />
 
    Possible results:
 
@@ -94,7 +106,7 @@
      :partying_face: Congratulations!  SSH merge signing is good.
 
    - ```
-     fatal: Commit 86efcf5 does not have a GPG signature.
+     fatal: Commit 666e636 does not have a GPG signature.
      ```
 
      :disappointed_relieved: Do not to worry!  This is error is likely due to the last commit not being signed or not trusted signer.
@@ -156,7 +168,13 @@
    > ```
 
    For more information about these Git configuration options, see [`merge.verifySignatures`][git-merge-verifysignatures].
+
+## End of exercise
+
+At the end of this exercise, the repository should look like:
   
+<img alt="Git tree at the end of the exercise" src="assets/03-end.png" width="600" height="394" />
+
 <hr />
 <p align="right">
   Next: <a href="04-sign-verify-tags.md">Signing and verifying tags</a>

@@ -3,8 +3,14 @@
 <p align="center">
   <a href="04-sign-verify-tags.md">Signing and verifying tags</a> •  
   Signing past commits and tags •  
-  <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
+  <a href="/README.md#rocket-beyond">&#128640; Beyond</a>
 </p>
+
+When considering signing code, the [Pro Git book section on signing][git-signing-everyone] reinforces the idea that it is something everyone involved must do:
+
+> Signing tags and commits is great, but if you decide to use this in your normal workflow, you’ll have to make sure that everyone on your team understands how to do so. If you don’t, you’ll end up spending a lot of time helping people figure out how to rewrite their commits with signed versions. Make sure you understand GPG and the benefits of signing things before adopting this as part of your standard workflow.
+
+This section is intended to help participants gain familiarity for the situation where someone new or accidentally does not sign commits and tags.
 
 ## Outcomes
 
@@ -122,13 +128,15 @@
    Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
    ```
 
-## Miscellany
+## End of exercise
 
-1. **Force pushing might be necessary depending on whether commits and tags were previously pushed** 
+At the end of this exercise, the repository should look like:
 
-1. **Signing old commits or tags might require [setting the `GIT_COMMITTER_DATE` environment variable](https://git-scm.com/docs/git-commit/2.24.0#_date_formats) to preserve historical datetime**
+<img alt="Git tree at the end of the exercise" src="assets/05-end.png" width="600" height="394" />
 
 <hr />
 <p align="right">
-  Next: <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
+  Next: <a href="/README.md#rocket-beyond">&#128640; Beyond</a>
 </p>
+
+[git-signing-everyone]: https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work#_everyone_must_sign
