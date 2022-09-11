@@ -19,51 +19,125 @@
 > **Note**
 > This exercise uses preparation done previously in "[Signing and verifying commits](02-sign-verify-commits.md)".
 
-1. **Checkout the default branch of the repository in preparation for the merge**
+1. **Create a branch where changes will be committed towards v1.0.0 release**
+
+   ```shell
+   git checkout -b feature/v1.0.0
+   ```
+
+1. **Create a simple "Hello world!" shell script**
+
+   ```shell
+   cat << 'EOF' > hello-world.sh
+   #! /usr/bin/env bash
+
+   echo "Hello world!"
+   EOF
+
+   chmod 755 hello-world.sh
+   ./hello-world.sh
+   ```
+
+   resulting in:
+
+   ```
+   Hello world!
+   ```
+
+1. **Commit "Hello world!" shell script to feature branch**
+
+   ```shell
+   git add .
+   git commit -m "Adding hello-world script for v1.0.0 release"
+   ```
+
+1. **Checkout the default branch to prepare for merging the feature branch**
 
    ```shell
    git checkout main
    ```
 
-1. **Merge branch from previous exercise ensuring signatures are verified**
+1. **Update the README prior to merging our changes for the new script**
 
    ```shell
-   git merge --verify-signatures exercises-$(whoami) --message "Confirm SSH merge signing setup"
+   cat << 'EOF' >> README.md
+
+   ## Hello world!
+
+   The `v1.0.0` release contains the `hello-world.sh` script, which understandably displays `Hello world!`.
+   EOF
+   ```
+
+1. **Commit updated README changes prior to merging our changes**
+
+   ```shell
+   git add .
+   git commit -m "Expanding README for upcoming feature"
+   ```
+
+1. **Merge the feature branch, ensuring signatures are verified**
+
+   ```shell
+   git merge --verify-signatures feature/v1.0.0 -m "Merging in work towards v1.0.0 release"
    ```
 
    Possible results:
 
    - ```
-     Commit 14a73ae has a good GPG signature by andyfeller@github.com
+     Commit 666e636 has a good GPG signature by andyfeller@github.com
      Merge made by the 'ort' strategy.
+      hello-world.sh | 3 +++
+      1 file changed, 3 insertions(+)
+      create mode 100755 hello-world.sh
      ```
 
      :partying_face: Congratulations!  SSH merge signing is good.
 
    - ```
-     fatal: Commit 1a18ff8 does not have a GPG signature.
+     fatal: Commit 86efcf5 does not have a GPG signature.
      ```
 
-     :disappointed_relieved: Do not to worry!  This is error is likely due to the last commit being signed.
+     :disappointed_relieved: Do not to worry!  This is error is likely due to the last commit not being signed or not trusted signer.
 
    For more information about signing merges, see "[`git merge --verify-signatures`][git-merge-verifysignatures]".
 
 1. **Confirm logs show SSH commit sign status**
 
    ```shell
-   git log --show-signature
+   git log
    ```
 
    Possible results:
 
    - ```
-     commit 5bd0c89361d4ed6242fc464f9fe80a1b49d80027 (HEAD -> main, origin/main, origin/HEAD)
-     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:cX/wtIPgTMgycKw3xFBE9xkJXM+K+t4KzifsuBKxexo
-     Merge: f41ed7f 14a73ae
+     commit 28c46b890121f042e86d7d1c1b58e150b8ac9948 (HEAD -> main)
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
+     Merge: ba5a622 666e636
      Author: Andy Feller <andyfeller@github.com>
-     Date:   Sun Sep 4 18:13:43 2022 -0400
+     Date:   Sat Sep 10 19:55:34 2022 -0400
      
-         Confirm SSH merge signing setup
+         Merging in work towards v1.0.0 release
+     
+     commit ba5a622501be61cc531c0732fd005c2dccb34944
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
+     Author: Andy Feller <andyfeller@github.com>
+     Date:   Sat Sep 10 19:55:26 2022 -0400
+     
+         Expanding README for upcoming feature
+     
+     commit 666e6364fc8e3156e31de42b103dca58a0ff7a62 (feature/v1.0.0)
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
+     Author: Andy Feller <andyfeller@github.com>
+     Date:   Sat Sep 10 19:53:01 2022 -0400
+     
+         Adding hello-world script for v1.0.0 release
+     
+     commit 14512033ae98ddb55eaebeedb27fdb78ae6cac49
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
+     Author: Andy Feller <andyfeller@github.com>
+     Date:   Sat Sep 10 19:49:07 2022 -0400
+     
+         Initialize workspace repository README
      ```
 
      :partying_face: Congratulations!  SSH merge verification setup is good.

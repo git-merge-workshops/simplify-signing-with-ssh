@@ -19,7 +19,7 @@
 1. **Confirm SSH tag signing is setup correctly**
 
    ```shell
-   git tag -s --message="Confirm SSH tag signing setup" v1.0.0
+   git tag -s -m "Tagging v1.0.0 release" v1.0.0
    ```
 
    Possible responses:
@@ -42,13 +42,13 @@
    Possible responses:
 
    - ```
-     object 20c2bd4bd781bb767098a65b40b394e74f9f1cce
+     object 28c46b890121f042e86d7d1c1b58e150b8ac9948
      type commit
      tag v1.0.0
-     tagger Your Name <your_email@example.com> 1661543739 -0400
+     tagger Andy Feller <andyfeller@github.com> 1662854258 -0400
      
-     Confirm SSH tag signing setup
-     Good "git" signature for your_email@example.com with ED25519 key SHA256:...
+     Tagging v1.0.0 release
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
      ```
 
      :partying_face: Congratulations!  SSH tag verifying setup including SSH agent is good.

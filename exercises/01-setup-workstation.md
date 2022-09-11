@@ -76,17 +76,12 @@
    >
    > For information on more advanced variants, see [`ssh-keygen` ALLOWED SIGNERS documentation][man-ssh-keygen-allowedsigners].
 
-1. **Clone the [`git-merge-workshops/simplify-signing-with-ssh`](https://github.com/git-merge-workshops/simplify-signing-with-ssh) repository**
+1. **Create local repository for workshop purposes**
 
    ```shell
-   git clone git@github.com:git-merge-workshops/simplify-signing-with-ssh.git
-   cd simplify-signing-with-ssh
+   git init -b main simplify-signing-with-ssh-workspace
+   cd simplify-signing-with-ssh-workspace
    ```
-
-   > **Note**
-   > This workshop repository is a template, which GitHub users can use to create a copy within their own account.
-   >
-   > <img width="920" alt="Screen Shot 2022-08-24 at 4 09 56 PM" src="https://user-images.githubusercontent.com/2089743/186513817-73b33136-0672-4a88-9c93-172404c2490f.png">
 
 1. **Configure SSH signing and verifying for workshop repository specifically:**
 

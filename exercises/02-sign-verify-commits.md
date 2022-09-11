@@ -16,22 +16,36 @@
 
 ## Steps
 
-1. **Create a branch where changes will be committed**
+1. **Create workspace repository README explaining its purpose and the exercise we are on**
 
    ```shell
-   git checkout -b exercises-$(whoami)
+   cat << 'EOF' > README.md
+   # My git-merge-workshops/simplify-signing-with-ssh workspace
+
+   This repository is my workspace for experimenting with SSH signing keys as a part of [git-merge-workshops/simplify-signing-with-ssh](https://github.com/git-merge-workshops/simplify-signing-with-ssh) where I experimented with the following exercises:
+
+   1. [Setup workstation](https://github.com/git-merge-workshops/simplify-signing-with-ssh/blob/main/exercises/01-setup-workstation.md)
+   1. [Signing and verifying commits](https://github.com/git-merge-workshops/simplify-signing-with-ssh/blob/main/exercises/02-sign-verify-commits.md)
+   1. [Signing and verifying merges](https://github.com/git-merge-workshops/simplify-signing-with-ssh/blob/main/exercises/03-sign-verify-merges.md)
+   1. [Signing and verifying tags](https://github.com/git-merge-workshops/simplify-signing-with-ssh/blob/main/exercises/04-sign-verify-tags.md)
+   1. [Signing past commits and tags](https://github.com/git-merge-workshops/simplify-signing-with-ssh/blob/main/exercises/05-sign-past-commits-tags.md)
+
+   EOF
    ```
 
 1. **Confirm SSH commit signing is setup correctly**
 
    ```shell
-   git commit -S --allow-empty --message="Confirm SSH commit signing setup"
+   git add .
+   git commit -S -m "Initialize workspace repository README"
    ```
 
    Possible results:
 
    - ```
-     [main f425cff] Confirm SSH commit signing setup
+     [main (root-commit) 1451203] Initialize workspace repository README
+      1 file changed, 10 insertions(+)
+      create mode 100644 README.md
      ```
 
      :partying_face: Congratulations!  SSH signing setup including SSH agent is good.
@@ -54,13 +68,14 @@
    git verify-commit -v HEAD
    ```
 
+   resulting in:
+
    ```shell
-   tree 0ef02896bdd7ac3eeabf688e6a6de47e9656c4a6
-   parent f425cff419cf75ae9689cbe7de4d0281549d53e3
-   author Andy Feller <andyfeller@github.com> 1661482122 -0400
-   committer Andy Feller <andyfeller@github.com> 1661482122 -0400
+   tree 8a370608ce603f2dd863efff4f7cc2401c75d829
+   author Andy Feller <andyfeller@github.com> 1662853747 -0400
+   committer Andy Feller <andyfeller@github.com> 1662853747 -0400
    
-   Confirm SSH signing setup
+   Initialize workspace repository README
    Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
    ```
 
@@ -75,7 +90,7 @@
    Possible results:
 
    - ```
-     Good "git" signature for your_email@example.com with ED25519 key SHA256:...
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
      ```
 
      :partying_face: Congratulations!  SSH commit verifying setup including SSH agent is good.
@@ -87,7 +102,7 @@
      :disappointed_relieved: Do not to worry!  This is error is likely due to missing `gpg.ssh.allowedSignersFile` configuration above.
 
    - ```
-     Good "git" signature with ED25519 key SHA256:...
+     Good "git" signature for andyfeller@github.com with ED25519 key SHA256:kanlHE9MI77O18EdnFxgEnzc3v1rxJHlW475IbnHdG8
      /path/to/.ssh/allowed_signers:1: invalid key^M
      sig_find_principals: sshsig_get_principal: key not found^M
      No principal matched.
