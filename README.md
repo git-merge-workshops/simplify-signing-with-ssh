@@ -80,3 +80,6 @@ This effort couldn't have happened without the support from many people, so than
 [git-verify-commit]: https://git-scm.com/docs/git-verify-commit
 [git-verify-tag]: https://git-scm.com/docs/git-verify-tag
 [1password-git-signing]: https://blog.1password.com/git-commit-signing/
+[vendor-support-github]: https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/
+[vendor-support-gitlab]: https://gitlab.com/gitlab-org/gitlab/-/issues/343879
+[vendor-support-bitbucket]: https://jira.atlassian.com/browse/BCLOUD-3166
