@@ -39,7 +39,7 @@
    >
    > This is an incomplete work in progress, but currently includes a pre-push hook script (`pre-push-hook.sh`) for maintainers to ensure that their own commits are PGP signed (nearly always merge commits), as well as a Python 3 script to verify commits against a trusted keys list.
 1. 🎉 Vendor support
-   - **GitHub**: [GA August 23rd 2002][vendor-support-github]
+   - **GitHub**: [GA August 23rd 2022][vendor-support-github]
    - **GitLab**: [In progress #343879][vendor-support-gitlab]
    - **BitBucket**: [In progress BCLOUD-3166][vendor-support-bitbucket]
 1. [:key: 1password "Sign your Git commits with 1Password"][1password-git-signing]
