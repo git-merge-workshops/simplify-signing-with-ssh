@@ -38,6 +38,10 @@
    > **Tooling for verification of PGP signed commits**
    >
    > This is an incomplete work in progress, but currently includes a pre-push hook script (`pre-push-hook.sh`) for maintainers to ensure that their own commits are PGP signed (nearly always merge commits), as well as a Python 3 script to verify commits against a trusted keys list.
+1. 🎉 Vendor support
+   - **GitHub**: [GA August 23rd 2002][vendor-support-github]
+   - **GitLab**: [In progress #343879][vendor-support-gitlab]
+   - **BitBucket**: [In progress BCLOUD-3166][vendor-support-bitbucket]
 1. [:key: 1password "Sign your Git commits with 1Password"][1password-git-signing]
    > We’re excited to announce that 1Password now allows you to set up and use SSH keys to sign Git commits. And with GitHub supporting SSH key signing as well, you can get that verified badge next to your username in seconds. No GPG keys required.
 1. [:computer: andyfeller/gh-ssh-allowed-signers][andyfeller/gh-ssh-allowed-signers]
