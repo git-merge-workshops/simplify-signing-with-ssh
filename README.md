@@ -44,6 +44,7 @@
    - **BitBucket**: [In progress BCLOUD-3166][vendor-support-bitbucket]
 1. [:key: 1password "Sign your Git commits with 1Password"][1password-git-signing]
    > We’re excited to announce that 1Password now allows you to set up and use SSH keys to sign Git commits. And with GitHub supporting SSH key signing as well, you can get that verified badge next to your username in seconds. No GPG keys required.
+   > ![1password screenshot showing SSH commit signing setup](https://blog.1password.com/posts/2022/git-commit-signing/1Passwordgitconfig.png)
 1. [:computer: andyfeller/gh-ssh-allowed-signers][andyfeller/gh-ssh-allowed-signers]
    > A `gh` extension to generate SSH allowed users file from GitHub users' signing keys.
 
