@@ -13,7 +13,7 @@
 
 ## Managing trusted keys at scale
 
-This workshop is aimed at getting participants started with SSH code signing.  One of the topics not covered is managing trust for hundreds or thousands of SSH keys across an enterprise as the steps in "[Exercise: Setup workstation](exercises/setup-workstation.md)" had participants setup to only trust their own SSH key:
+This workshop is aimed at getting participants started with SSH code signing.  One of the topics not covered is managing trust for hundreds or thousands of SSH keys across an enterprise as the steps in "[Exercise: Setup workstation](exercises/01-setup-workstation.md)" had participants setup to only trust their own SSH key:
 
 > 4. **Create file containing SSH public key for verifying signers**
 > 
@@ -38,7 +38,7 @@ GPG has been designed so individuals can [revoke keys from keyservers][gpg-key-r
 
 <hr />
 <p align="right">
-  Next: <a href="/README.md#rocket-beyond">:rocket: Beyond</a>
+  Next: <a href="/README.md#rocket-beyond">&#128640; Beyond</a>
 </p>
 
 [gpg-key-revoking]: https://www.gnupg.org/gph/en/manual/c235.html#AEN304
