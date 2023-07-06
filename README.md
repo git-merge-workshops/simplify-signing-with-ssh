@@ -13,7 +13,10 @@
   <a href="#books-resources">&#128218; Resources</a>
 </p>
 
-> In this workshop, participants learn how to secure Git commits using [the new OpenSSH feature](https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/).  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome. 
+> In this workshop, participants learn how to secure Git commits using [the new OpenSSH feature](https://github.blog/changelog/2022-08-23-ssh-commit-verification-now-supported/).  This is an alternative to the traditional method of using GPG and maintaining keys which can be somewhat cumbersome.
+
+> **Note**
+> This workshop was originally [presented at Git Merge 2022](https://www.youtube.com/watch?v=uhy_ojFqLg0).
 
 ## :mega: Prerequisites
 - Git 2.34 or newer
