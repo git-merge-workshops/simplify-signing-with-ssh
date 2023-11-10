@@ -18,6 +18,8 @@
 > **Note**
 > This workshop was originally [presented at Git Merge 2022](https://www.youtube.com/watch?v=uhy_ojFqLg0).
 
+[![Simplify signing Git commits and tags with SSH keys [Workshop] - Git Merge 2022](http://img.youtube.com/vi/uhy_ojFqLg0/0.jpg)](http://www.youtube.com/watch?v=uhy_ojFqLg0 "Simplify signing Git commits and tags with SSH keys [Workshop] - Git Merge 2022")
+
 ## :mega: Prerequisites
 - Git 2.34 or newer
   - [Linux](https://git-scm.com/download/linux)
